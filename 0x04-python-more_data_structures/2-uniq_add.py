@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
     mYset = set(my_list)
-    count = 0
+    count = mYset[0]
     for i  in mYset:
-        count +=i
+        if i != mYset[0]:
+            count +=i
     return count
